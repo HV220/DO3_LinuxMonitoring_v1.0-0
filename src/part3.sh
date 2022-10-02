@@ -1,5 +1,6 @@
 #!/bin/bash
 source ./libs/colors_bash.sh
+
 PARAMETR_1=${NORMAL}
 PARAMETR_2=${NORMAL}
 PARAMETR_3=${NORMAL}
