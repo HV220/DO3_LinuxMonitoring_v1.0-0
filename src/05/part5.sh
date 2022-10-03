@@ -67,9 +67,3 @@ TOP_10_EXEC ${1}
 end=`date +%s`
 echo "Script execution time (in seconds) = $(($end-$start))"
 }
-
-function main() {
-    part5 ${1}
-}
-
-main ${1}

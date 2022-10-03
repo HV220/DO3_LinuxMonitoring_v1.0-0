@@ -1,5 +1,6 @@
 #!/bin/bash
-source ./libs/colors_bash.sh
+
+source ../libs/colors_bash.sh
 
 source ./part4.conf
 

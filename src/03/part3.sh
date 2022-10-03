@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./libs/colors_bash.sh
+source ../libs/colors_bash.sh
 
 PARAMETR_1=${NORMAL}
 PARAMETR_2=${NORMAL}
@@ -179,9 +179,3 @@ echo -e "${PARAMETR_1}${PARAMETR_2}SPACE_ROOT${NORMAL} = ${PARAMETR_3}${PARAMETR
 echo -e "${PARAMETR_1}${PARAMETR_2}SPACE_ROOT_USED${NORMAL} = ${PARAMETR_3}${PARAMETR_4}$SPACE_ROOT_USED MB${NORMAL}"
 echo -e "${PARAMETR_1}${PARAMETR_2}SPACE_ROOT_FREE${NORMAL} = ${PARAMETR_3}${PARAMETR_4}$SPACE_ROOT_FREE MB${NORMAL}"
 }
-
-function main() {
-check_parametrs $1 $2 $3 $4
-part_2
-}
-main $1 $2 $3 $4

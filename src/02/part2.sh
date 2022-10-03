@@ -73,10 +73,3 @@ exec > "$name_file.status"
 part_2
 fi
 }
-
-function main(){
-part_2
-saving_info
-}
-
-main
