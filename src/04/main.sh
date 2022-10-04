@@ -2,8 +2,8 @@
 
 source ./part4.sh
 
-function main() {
+function main_4() {
 part_4
 }
 
-main
+main_4

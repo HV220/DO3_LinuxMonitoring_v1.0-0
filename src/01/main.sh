@@ -3,7 +3,7 @@
 source ./part1.sh
 
 function main() {
-part_1
+part_1 $1
 }
 
-main
+main $1

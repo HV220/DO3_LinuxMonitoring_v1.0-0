@@ -1,8 +1,8 @@
 #!/bin/bash
 
 source ../libs/colors_bash.sh
-
 source ./part4.conf
+source ../03/part3.sh
 
 PR_1=6
 PR_2=1
@@ -78,16 +78,12 @@ function part_4() {
 re='[1-6]'
 if [[ $column1_background =~ $re ]] && [[ $column1_font_color =~ $re ]] && [[ $column2_font_color =~ $re ]] && [[ $column2_background =~ $re ]]
 then
-source ./part3.sh ${column1_background} ${column1_font_color} ${column2_background} ${column2_font_color}
+check_parametrs ${column1_background} ${column1_font_color} ${column2_background} ${column2_font_color}
+part_3
 print_colors ${column1_background} ${column1_font_color} ${column2_background} ${column2_font_color}
 else
-source ./part3.sh ${PR_1} ${PR_2} ${PR_3} ${PR_4}
+check_parametrs ${PR_1} ${PR_2} ${PR_3} ${PR_4}
+part_3
 print_colors ${PR_1} ${PR_2} ${PR_3} ${PR_4} "default"
 fi
 }
-
-function main() {
-part_4
-}
-
-main

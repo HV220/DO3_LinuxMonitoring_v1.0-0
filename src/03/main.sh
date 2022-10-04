@@ -2,8 +2,8 @@
 
 source ./part3.sh
 
-function main() {
+function main_3() {
 check_parametrs $1 $2 $3 $4
-part_2
+part_3
 }
-main $1 $2 $3 $4
+main_3 $1 $2 $3 $4

@@ -119,7 +119,7 @@ PARAMETR_4=$(check_color_param_2_4 $4)
 fi
 }
 
-function part_2() {
+function part_3() {
 #сетевое имя
 HOSTNAME=$(hostnamectl | awk '{print $3;} ' | head -1)
 echo -e "${PARAMETR_1}${PARAMETR_2}HOSTNAME${NORMAL} = ${PARAMETR_3}${PARAMETR_4}$HOSTNAME${NORMAL}"
